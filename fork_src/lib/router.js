@@ -1,4 +1,4 @@
-import { parseParams, parseQuery, testRoute } from './router-utils';
+import { parseParams, parseQuery, testRoute } from './router_utils';
 
 let globalRoutes;
 let globalCallback;
