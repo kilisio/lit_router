@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit-element';
 import { router } from './router/router.js';
 
-class MyApp extends LitElement {
+class demo_app extends LitElement {
 
     static get properties() {
         return {
@@ -74,4 +74,4 @@ class MyApp extends LitElement {
     }
 }
 
-customElements.define('my-app', MyApp);
+customElements.define('demo-app', demo_app);
