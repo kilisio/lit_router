@@ -1,3 +1,3 @@
 export { route_link } from './router/router-link';
-export { RouterSlot } from './router/router-slot';
+export { route_slot } from './router/router-slot';
 

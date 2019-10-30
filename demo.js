@@ -63,13 +63,13 @@ class MyApp extends LitElement {
                 <route-link href="/user/16">user/16</router-link>
                 <route-link href="/user/16/not/found">user/16/not/found</router-link>
             </nav>
-            <router-slot route='${this.route}'>
+            <route-slot route='${this.route}'>
                 <div slot='home'>Home</div>
                 <div slot='info'>Info</div>
                 <div slot='user'>User ${this.params.id}</div>
                 <div slot='not-authorized'>Not Authorized</div>
                 <div slot='not-found'>Not Found</div>
-            </router-slot>
+            </route-slot>
         `;
     }
 }

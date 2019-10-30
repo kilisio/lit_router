@@ -1,6 +1,6 @@
 import { LitElement } from 'lit-element';
 
-export class RouterSlot extends LitElement {
+export class route_slot extends LitElement {
     static get properties() {
         return {
             route: { 
@@ -28,4 +28,4 @@ export class RouterSlot extends LitElement {
     }
 }
 
-customElements.define('router-slot', RouterSlot);
+customElements.define('route-slot', route_slot);
