@@ -20,19 +20,6 @@ export class RouterLink extends LitElement {
 
     render() {
         return html`
-            <style>
-                ::slotted(*) {
-                    pointer-events: none;
-                }
-                a {
-                    all: unset;
-                    display: contents;
-                    
-                    /*Fallback for Edge*/
-                    text-decoration: unset;
-                    color: unset;
-                }
-            </style>
             <a href='${this.href}'>
                 <slot></slot>
             </a>
