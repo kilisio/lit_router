@@ -4,7 +4,11 @@
   "main": "lit-element-router.js",
   "scripts": {
     "rls": "standard-version",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "build": "npm run build_lib",
+    "build_app": "rollup -c ./fork_config/rollup/app_build.config.js",
+    "build_lib": "rollup -c ./fork_config/rollup/lib_build.config.js",
+    "pub_lib": "cd $INIT_CWD/fork_build/lib && npm publish"
   },
   "keywords": [
     "lit",
