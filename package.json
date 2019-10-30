@@ -1,5 +1,5 @@
 {
-  "name": "lit_element_router",
+  "name": "lit_router",
   "version": "1.2.5",
   "main": "lit-element-router.js",
   "scripts": {
