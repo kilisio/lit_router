@@ -1,3 +1,3 @@
-export { route_link } from './router/route_link';
-export { route_slot } from './router/route_slot';
+export { route_link } from './views/route_link';
+export { route_slot } from './views/route_slot';
 

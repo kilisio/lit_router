@@ -1,5 +1,5 @@
 import { LitElement, html } from 'lit-element';
-import { router } from './router/router.js';
+import { router } from '../lib/router.js';
 
 class demo_app extends LitElement {
 
