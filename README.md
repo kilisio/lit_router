@@ -29,7 +29,7 @@ A simple and lightweight LitElement router.
 I do not intend to publish this fork to the `npm` package registry. If you have `verdaccio` installed in your system simply:
 
 ```bash
-    git clone -b forked_dev https://github.com/kilisio/lit-element-router.git
+    git clone -b forked_dev https://github.com/kilisio/lit_router.git
     cd lit-element-router
     npm install
     npm run build
@@ -47,7 +47,7 @@ Then simply install and add it to your lit-element script:
     import { router, route_link, route_slot } from '@kilisio/lit_router_lib';
 ```
 
-The package scope `@kilisio` may be changed in the `lib_build.config.rollup` script.
+The package scope `@kilisio` may be changed in the `lib_build.config.js` script.
 
 ## Usage
 ```javascript
@@ -133,7 +133,7 @@ The package scope `@kilisio` may be changed in the `lib_build.config.rollup` scr
 ## Demo
 
 ```bash
-    git clone -b forked_dev https://github.com/kilisio/lit-element-router.git
+    git clone -b forked_dev https://github.com/kilisio/lit_router.git
     cd lit-element-router
     npm install
     npm run build_app
