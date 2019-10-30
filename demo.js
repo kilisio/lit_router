@@ -57,11 +57,11 @@ class MyApp extends LitElement {
     render() {
         return html`
             <nav>
-                <route-link href="/">Home</router-link>
-                <route-link href="/info"><span>Info</span></router-link>
-                <route-link href="/user/14">user/14</router-link>
-                <route-link href="/user/16">user/16</router-link>
-                <route-link href="/user/16/not/found">user/16/not/found</router-link>
+                <route-link href="/">Home</route-link>
+                <route-link href="/info">Info</route-link>
+                <route-link href="/user/14">user 14</route-link>
+                <route-link href="/user/16">user 16</route-link>
+                <route-link href="/user/23/blahblahblah">not found</route-link>
             </nav>
             <route-slot route='${this.route}'>
                 <div slot='home'>Home</div>
