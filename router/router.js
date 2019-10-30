@@ -1,4 +1,4 @@
-import { parseParams, parseQuery, stripExtraTrailingSlash, testRoute } from '../utility/router-utility';
+import { parseParams, parseQuery, testRoute } from '../utility/router-utility';
 
 let globalRoutes;
 let globalCallback;
@@ -11,12 +11,12 @@ export function router(routes, callback) {
     if (!stats) {
         window.addEventListener('route', () => {
             router.call(this, globalRoutes, globalCallback);
-        })
+        });
 
         window.onpopstate = () => {
             window.dispatchEvent(new CustomEvent('route'));
-        }
-        stats = 1
+        };
+        stats = 1;
     }
 
     globalRoutes = routes;
@@ -46,7 +46,7 @@ export function router(routes, callback) {
                         route.callback && route.callback('not-authorized', route.params, route.query, route.data)
                         callback('not-authorized', route.params, route.query, route.data);
                     }
-                })
+                });
         } else {
             route.callback && route.callback(route.name, route.params, route.query, route.data)
             callback(route.name, route.params, route.query, route.data);

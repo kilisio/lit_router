@@ -1,6 +1,5 @@
-import { } from '@webcomponents/webcomponentsjs/webcomponents-loader.js'
-import { LitElement, html } from 'lit-element'
-import { router, RouterSlot, RouterLink } from './lit-element-router'
+import { LitElement, html } from 'lit-element';
+import { router } from './router/router.js';
 
 class MyApp extends LitElement {
 
@@ -8,39 +7,51 @@ class MyApp extends LitElement {
         return {
             route: { type: String },
             params: { type: Object }
-        }
+        };
     }
 
     constructor() {
-        super()
-        this.route = ''
-        this.params = {}
-        router([{
-            name: 'home',
-            pattern: '',
-            callback: (route, params, query)=>{ console.log('callback', route, params, query)},
-            guard: () => { return true }
-        }, {
-            name: 'info',
-            pattern: 'info'
-        }, {
-            name: 'user',
-            pattern: 'user/:id',
-            guard: () => {
-                return new Promise((resolve, reject) => {
-                    setTimeout(() => {
-                        resolve(true)
-                    }, 1000);
-                })
+        super();
+        this.route = '';
+        this.params = {};
+        router(
+            [
+                {
+                    name: 'home',
+                    pattern: '',
+                    callback: (route, params, query)=>{ 
+                        console.log('callback', route, params, query);
+                    },
+                    guard: () => { 
+                        return true; 
+                    }
+                }, 
+                {
+                    name: 'info',
+                    pattern: 'info'
+                }, 
+                {
+                    name: 'user',
+                    pattern: 'user/:id',
+                    guard: () => {
+                        return new Promise((resolve) => {
+                            setTimeout(() => {
+                                resolve(true);
+                            }, 1000);
+                        });
+                    }
+                }, 
+                {
+                    name: 'not-found',
+                    pattern: '*'
+                }
+            ], 
+            (route, params, query, data) => {
+                this.route = route;
+                this.params = params;
+                console.log(route, params, query, data);
             }
-        }, {
-            name: 'not-found',
-            pattern: '*'
-        }], (route, params, query, data) => {
-            this.route = route
-            this.params = params
-            console.log(route, params, query, data)
-        })
+        );
     }
 
     render() {
@@ -59,8 +70,8 @@ class MyApp extends LitElement {
                 <div slot='not-authorized'>Not Authorized</div>
                 <div slot='not-found'>Not Found</div>
             </router-slot>
-        `
+        `;
     }
 }
 
-customElements.define('my-app', MyApp)
+customElements.define('my-app', MyApp);
