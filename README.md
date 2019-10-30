@@ -37,7 +37,7 @@ I do not intend to publish this fork to the `npm` package registry. If you have 
 ```
 
 The above will publish the package to `verdaccio` if you have it configured as your default package publishing registry.  
-Then simply install and add it to your package:
+Then simply install and add it to your lit-element script:
 
 ```bash
     npm install @kilisio/lit_router_lib
@@ -46,8 +46,6 @@ Then simply install and add it to your package:
 ```javascript
     import { router, route_link, route_slot } from '@kilisio/lit_router_lib';
 ```
-
-to your lit-element script.
 
 ## Usage
 ```javascript
