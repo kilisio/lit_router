@@ -47,6 +47,8 @@ Then simply install and add it to your lit-element script:
     import { router, route_link, route_slot } from '@kilisio/lit_router_lib';
 ```
 
+The package scope `@kilisio` may be changed in the `lib_build.config.rollup` script.
+
 ## Usage
 ```javascript
     import { LitElement, html } from 'lit-element';
