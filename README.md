@@ -5,7 +5,8 @@
 
 
 ## Description
-A simple and lightweight LitElement router.
+A simple and lightweight LitElement router.  
+This was originally a fork of `https://github.com/hamedasemi/lit-element-router.git` before I made it a stand alone repository mainly because forked repositories do not display contributions to the profile page and I really like my profile green(preferably dark green) :laughing: .
 
 <!-- ## Features -->
 
@@ -26,7 +27,7 @@ A simple and lightweight LitElement router.
 
 
 ## Install
-I do not intend to publish this fork to the `npm` package registry. If you have `verdaccio` installed in your system simply:
+I do not intend to publish this package to the `npm` package registry. If you have `verdaccio` installed in your system simply:
 
 ```bash
     git clone -b forked_dev https://github.com/kilisio/lit_router.git
