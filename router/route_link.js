@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit-element';
 
-export class RouterLink extends LitElement {
+export class route_link extends LitElement {
 
     constructor() {
         super();
@@ -27,4 +27,4 @@ export class RouterLink extends LitElement {
     }
 }
 
-customElements.define('router-link', RouterLink);
+customElements.define('route-link', route_link);
