@@ -52,7 +52,7 @@ export function router(routes, callback) {
             callback(route.name, route.params, route.query, route.data);
         }
     } else if (notFoundRoute) {
-        notFoundRoute.callback && notFoundRoute.callback(notFoundRoute.name, {}, parseQuery(querystring), notFoundRoute.data)
+            notFoundRoute.callback && notFoundRoute.callback(notFoundRoute.name, {}, parseQuery(querystring), notFoundRoute.data)
         callback(notFoundRoute.name, {}, parseQuery(querystring), notFoundRoute.data);
     } else {
         callback('not-found', {}, parseQuery(querystring), notFoundRoute.data);

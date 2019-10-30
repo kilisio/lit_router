@@ -7,14 +7,14 @@ import generatePackageJson from 'rollup-plugin-generate-package-json';
 import * as pkgson from "../../package.json";
 
 export default {
-    input: 'fork_src/lib.js',
+    input: 'src/lib.js',
     output: {
-        file: 'fork_build/lib/lib.js',
+        file: 'build/lib/lib.js',
         format: 'esm'
     },
     plugins: [
         clear({
-            targets: ['fork_build/lib'],
+            targets: ['build/lib'],
         }),
         resolve(),
         commonJS({
@@ -23,7 +23,7 @@ export default {
         cleanup(),
         terser(),
         generatePackageJson({
-            outputFolder: 'fork_build/lib',
+            outputFolder: 'build/lib',
             baseContents: {
                 "name": '@kilisio/' + pkgson.name + '_lib',
                 "version": pkgson.version,
