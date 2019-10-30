@@ -1,7 +1,4 @@
-import { router } from './router/router'
-import { routerMixin, routerLinkMixin, routerOutletMixin } from './router-mixin/router-mixin'
+export { router } from './router/router';
+export { RouterLink } from './router/router-link';
+export { RouterSlot } from './router/router-slot';
 
-import { RouterLink } from './router/router-link'
-import { RouterSlot } from './router/router-slot'
-
-export { router, RouterLink, RouterSlot, routerMixin, routerLinkMixin, routerOutletMixin }
