@@ -6,14 +6,14 @@ import commonJS from 'rollup-plugin-commonjs';
 import { terser } from "rollup-plugin-terser";
 
 export default {
-    input: 'src/views.js',
+    input: 'fork_src/views.js',
     output: {
-        file: 'app/views.js',
+        file: 'fork_app/views.js',
         format: 'esm'
     },
     plugins: [
         clear({
-            targets: ['app'],
+            targets: ['fork_app'],
         }),
         resolve(),
         commonJS({
@@ -25,11 +25,11 @@ export default {
             targets: [
                 {
                     src: [
-                        'src/views/assets',
-                        'src/lib',
-                        'src/index.html',
+                        'fork_src/views/assets',
+                        'fork_src/lib',
+                        'fork_src/index.html',
                     ], 
-                    dest: 'app/'
+                    dest: 'fork_app/'
                 }
             ]
         })

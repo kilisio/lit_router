@@ -4,7 +4,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import commonJS from 'rollup-plugin-commonjs';
 import { terser } from "rollup-plugin-terser";
 import generatePackageJson from 'rollup-plugin-generate-package-json';
-import * as pkgson from "./package.json";
+import * as pkgson from "../../package.json";
 
 export default {
     input: 'fork_src/lib.js',
