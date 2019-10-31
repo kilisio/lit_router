@@ -31,7 +31,7 @@ I do not intend to publish this package to the `npm` package registry. If you ha
 
 ```bash
     git clone -b forked_dev https://github.com/kilisio/lit_router.git
-    cd lit-element-router
+    cd lit_router
     npm install
     npm run build
     npm run pub_lib
@@ -135,7 +135,7 @@ The package scope `@kilisio` may be changed in the `lib_build.config.js` script.
 
 ```bash
     git clone -b forked_dev https://github.com/kilisio/lit_router.git
-    cd lit-element-router
+    cd lit_router
     npm install
     npm run build_app
     npm run serve_demo
