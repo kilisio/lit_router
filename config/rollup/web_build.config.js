@@ -6,7 +6,7 @@ import commonJS from 'rollup-plugin-commonjs';
 import { terser } from "rollup-plugin-terser";
 
 export default {
-    input: 'src/web/views.js',
+    input: 'src/views.js',
     output: {
         file: 'app/web/views.js',
         format: 'esm'
