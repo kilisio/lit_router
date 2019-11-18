@@ -6,14 +6,14 @@ import commonJS from 'rollup-plugin-commonjs';
 import { terser } from "rollup-plugin-terser";
 
 export default {
-    input: 'src/views.js',
+    input: 'src/web/views.js',
     output: {
-        file: 'app/views.js',
+        file: 'app/web/views.js',
         format: 'esm'
     },
     plugins: [
         clear({
-            targets: ['app'],
+            targets: ['app/web'],
         }),
         resolve(),
         commonJS({
@@ -29,7 +29,7 @@ export default {
                         'src/lib',
                         'src/index.html',
                     ], 
-                    dest: 'app/'
+                    dest: 'app/web/'
                 }
             ]
         })
