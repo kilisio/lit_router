@@ -6,7 +6,7 @@
 
 ## Description
 A simple and lightweight LitElement router.  
-This was originally a fork of `https://github.com/hamedasemi/lit-element-router.git` before I made it a stand alone repository mainly because forked repositories do not display contributions to the profile page and I really like my profile green(preferably dark green) :laughing: .
+This was originally a fork of `https://github.com/hamedasemi/lit-element-router.git` before I personalized it.
 
 <!-- ## Features -->
 
